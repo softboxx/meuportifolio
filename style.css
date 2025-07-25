@@ -323,7 +323,13 @@ body {
   }
 
   .experiencias {
-    flex-direction: column;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .exp-box {
+    width: 100%;
+    height: auto;
   }
 
   .habilidades {
@@ -333,4 +339,25 @@ body {
   .titulo h1 {
     font-size: 40px;
   }
+
+  .texto {
+    text-align: center;
+  }
+
+  .figura {
+    margin-bottom: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
+
+@media (max-width: 600px) {
+  .habilidades {
+    grid-template-columns: 1fr;
+    padding: 2rem;
+  }
+}
+
