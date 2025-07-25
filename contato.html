@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redes Sociais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-image: url(images/imagCONT.png);
+      background-repeat: no-repeat;
+      color: #fff;
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding-top: 60px; /* espaço para a navbar */
+    }
+
+    /* Navbar fixa */
+    .navbar {
+      background-color: #000;
+      padding: 20px 0;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      gap: 180px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: var(--branco);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .navbar a:hover,
+    .navbar a:focus {
+      color: var(--azul);
+    }
+
+    .social-section {
+      display: grid;
+      grid-template-columns: repeat(2, 250px);
+      grid-gap: 65px;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 20px 50px 400px;
+    }
+
+    .social-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .social-box {
+      background-color: black;
+      border: 2px solid white;
+      width: 275px;
+      height: 235px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-box:hover {
+      transform: scale(1.08);
+      border: 2px solid #FF4D00;
+    }
+
+    .icon1 {
+      width: 80px;
+      height: 80px;
+      background-image: url(images/Insta.png);
+      margin-bottom: 30px;
+    }
+
+    .icon2 {
+      width: 80px;
+      height: 80px;
+      background-image: url(images/Whatsapp.png);
+      margin-bottom: 30px;
+    }
+
+    .icon3 {
+      width: 80px;
+      height: 80px;
+      background-image: url(images/TIKTOK.png);
+      margin-bottom: 30px;
+    }
+
+    .icon4 {
+      width: 80px;
+      height: 80px;
+      background-image: url(images/EMAIL.png);
+      margin-bottom: 30px;
+    }
+
+
+    p {
+      font-weight: 900;
+      font-size: 23px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html#sobre">Sobre mim</a></li>
+      <li><a href="projetos.html">Meus projetos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section class="social-section">
+    <a href="https://www.instagram.com/sofmarinho_?igsh=eHh2dndpZ3ZoYm14&utm_source=qr" target="_blank" class="social-link">
+      <div class="social-box">
+        <div class="icon1"></div>
+        <p>INSTAGRAM</p>
+      </div>
+    </a>
+
+    <a href="https://wa.me/5571984328625" target="_blank" class="social-link">
+      <div class="social-box">
+        <div class="icon2"></div>
+        <p>WHATSAPP</p>
+      </div>
+    </a>
+
+    <a href="https://www.tiktok.com/@soft_.boxx?_t=ZM-8yJ7QnxjwnN&_r=1" target="_blank" class="social-link">
+      <div class="social-box">
+        <div class="icon3"></div>
+        <p>TIKTOK</p>
+      </div>
+    </a>
+
+    <a href="mailto:sophimarinhoofc@gmail.com" target="_blank" class="social-link">
+      <div class="social-box">
+        <div class="icon4"></div>
+        <p>E-MAIL</p>
+      </div>
+    </a>
+  </section>
+</body>
+</html>
